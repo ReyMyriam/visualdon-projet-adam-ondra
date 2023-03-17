@@ -37,4 +37,4 @@ Au clic, une fenêtre avec les informations relatives à l'étape de la vie d'Ad
 Comme je n'ai pas des données très variées (des voies avec leur date d'effectuation, leur niveau et leur localisation), je peux représenter les mêmes choses de manière différentes. 
 
 [VisualDon_Wireframe-croquis.pdf](https://github.com/ReyMyriam/visualdon-projet-adam-ondra/files/11001235/VisualDon_Wireframe-croquis.pdf)
-[VisualDon_Wireframes_Figma.pdf](https://github.com/ReyMyriam/visualdon-projet-adam-ondra/files/11003021/VisualDon_Wireframes_Figma.pdf)
+[VisualDon_Wireframes_Figma.pdf](https://github.com/ReyMyriam/visualdon-projet-adam-ondra/files/11003036/VisualDon_Wireframes_Figma.pdf)
