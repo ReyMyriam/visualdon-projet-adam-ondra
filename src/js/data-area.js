@@ -18,7 +18,7 @@ function makeAreaGraph() {
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   // Parse the Data
-  d3.csv("././data/data-area.csv").then(function (data) {
+  d3.csv("/data/data-area.csv").then(function (data) {
     
     //////////
     // GENERAL //
