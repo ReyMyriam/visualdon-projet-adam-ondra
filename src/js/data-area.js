@@ -140,8 +140,8 @@ function makeAreaGraph() {
     }
 
     // A function that update the chart for given boundaries
-    function updateChart() {
-      extent = d3.event.selection;
+    function updateChart(event) {
+      extent = event.selection;
 
       // If no selection, back to initial coordinate. Otherwise, update X axis domain
       if (!extent) {
