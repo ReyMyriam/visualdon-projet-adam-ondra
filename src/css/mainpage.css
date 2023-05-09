@@ -1,0 +1,212 @@
+@import url("https://use.typekit.net/iao2fiy.css");
+
+/* container de tout le corps */
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: "chandler-42-regular", sans-serif;
+}
+
+/* div container de tous les textes */
+main .text-container {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 3rem;
+}
+
+/* les textes de la page d'accueil */
+.main-text {
+  margin: 1rem;
+}
+
+#title {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.footer {
+  align-self: flex-end;
+  flex-basis: 30%;
+  margin: 3rem;
+}
+
+#start {
+  align-self: center;
+  color: red;
+  font-size: 30px;
+  margin-top: 2rem;
+}
+
+#main-instructions {
+  font-family: 'Sen', sans-serif;
+  font-weight: 10;
+  font-size: 1rem;
+}
+
+#instructions {
+  font-family: 'Sen', sans-serif;
+  font-weight: 40;
+  font-size: 14px;
+}
+
+/* div container de l'image page d'accueil */
+.svg-container {
+  flex-basis: 50%;
+  margin: 3rem;
+}
+
+/* image page d'accueil */
+.svg-accueil {
+  width: 100%;
+  height: auto;
+}
+
+/* Style pour masquer la fenêtre */
+.fenetre {
+  position: fixed;
+  top: 5vh;
+  left: 5vw;
+  width: 90vw;
+  height: 90vh;
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.fenetre .text-container {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 3rem;
+}
+
+.fenetre .graph-container{
+  flex-basis: 50%;
+  align-self:center;
+  margin: 3rem;
+}
+
+/* Cération colonne Médailles pie */
+.graph-container #pie-chart{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+  font-size: 12px;
+}
+
+#ruban {
+  display: block;
+  margin: auto;
+}
+
+#ruban path {
+  align-items: baseline;
+}
+
+.medaille-container {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ticklabel {
+  font-size: 12px;
+}
+
+/* Style pour afficher la fenêtre */
+.fenetre.active {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: "chandler-42-regular", sans-serif;
+}
+
+/* Pour le titre h2 */
+.fenetre h2 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+/* Pour le contenu p */
+.fenetre p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.croix {
+    /* position absolute => sa référence c'est la boite du header */
+    position: absolute;
+    /* décalage de 10px par rapport au bord droit (du header) */
+    right: 50px;
+    /* décalage de 5px par rapport au bord haut (du header) */
+    top: 50px;
+    cursor: pointer;
+}
+
+.info-bulle {
+  position: absolute;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: transparent;
+  color: #000000;
+  border-radius: 5px;
+  font-family: "chandler-42-regular", sans-serif;
+  font-size: 12px;
+  display: none;
+}
+
+.bars-button {
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "chandler-42-regular", sans-serif;
+  font-size: 10px;
+  font-weight: 200;
+  line-height: 1;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.bars-button#var1:hover {
+  background-color: #FFE654;
+  color: #0d172a;
+}
+
+.bars-button#var2:hover {
+  background-color: #C0C0C0;
+  color: #0d172a;
+}
+
+.bars-button#var3:hover {
+  background-color: #B85D0D;
+  color: #0d172a;
+}
+
+.tooltip {
+  align-self: center;
+}
