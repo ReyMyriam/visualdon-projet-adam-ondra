@@ -51,7 +51,8 @@ boutons.forEach(function (bouton) {
 });
 
 //Afficher le grphique d'aires dans la fenêtre
-makeAreaGraph();
+d3.csv("/data/data-area.csv").then(function (data) {
+makeAreaGraph(data)});
 
 //Afficher le graphique à bâtons dans la fenêtre
 createBars();
