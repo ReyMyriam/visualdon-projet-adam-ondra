@@ -2,7 +2,7 @@ import * as d3 from "d3";
 
 //d3.csv("././data/data-area.csv").then(function(data) {
 
-function makeAreaGraph() {
+function makeAreaGraph(data) {
   // set the dimensions and margins of the graph
   var margin = { top: 60, right: 230, bottom: 50, left: 50 },
     width = 660 - margin.left - margin.right,
@@ -140,8 +140,8 @@ function makeAreaGraph() {
     }
 
     // A function that update the chart for given boundaries
-    function updateChart() {
-      extent = d3.event.selection;
+    function updateChart(event) {
+      extent = event.selection;
 
       // If no selection, back to initial coordinate. Otherwise, update X axis domain
       if (!extent) {
@@ -222,7 +222,7 @@ function makeAreaGraph() {
       .style("alignment-baseline", "middle")
       .on("mouseover", highlight)
       .on("mouseleave", noHighlight);
-  });
+  //});
 }
 
 export { makeAreaGraph };
