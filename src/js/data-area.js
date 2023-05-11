@@ -222,7 +222,7 @@ function makeAreaGraph(data) {
       .style("alignment-baseline", "middle")
       .on("mouseover", highlight)
       .on("mouseleave", noHighlight);
-  //});
+  });
 }
 
 export { makeAreaGraph };
