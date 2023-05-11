@@ -2,7 +2,7 @@ import * as d3 from "d3";
 
 function createRadar() {
 
-  d3.json("././data/data-radar.json").then(function (data) {
+  d3.json("/data/data-radar.json").then(function (data) {
     let features = Object.keys(data[0]);
 
     let width = 400;

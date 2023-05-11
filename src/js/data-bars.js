@@ -43,7 +43,7 @@ function createBars() {
   // A function that create / update the plot for a given variable:
   function update(selectedVar) {
     // Parse the Data
-    d3.csv("././data/data-bars.csv").then(function (data) {
+    d3.csv("/data/data-bars.csv").then(function (data) {
       // X axis
       x.domain(data.map((d) => d.group));
       const tickValues = data
